@@ -83,9 +83,6 @@ int main(){
 	if(playerAction == 1){
 		cout << "Player draws the 3rd card!!!" << "\n";
 		playerCards[2] = drawCard();
-		while(cardNames[playerCards[2]] == cardNames[playerCards[0]] or cardNames[playerCards[2]] == cardNames[playerCards[1]]){
-			playerCards[2] = drawCard();
-		}
 		cout << "Your 3rd card: " << cardNames[playerCards[2]] << "\n";
 		playerScore = calScore(playerScore,cardScores[playerCards[2]],0);
 		cout << "Your new score: " << playerScore << "\n";
